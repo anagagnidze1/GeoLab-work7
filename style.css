@@ -1,0 +1,57 @@
+.street {
+    width: 99%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+.car1{
+    width: 200px;
+	height: 100px;
+	z-index: 1;
+	position: absolute;
+	transform: translate(0px,500px);
+	animation: car1 15s infinite;
+}
+.car2{
+    width: 250px;
+	height: 100px;
+	z-index: 2;
+	position: absolute;
+	bottom: 0;
+    right: 0;
+	animation: car2 5s infinite linear;
+}
+
+.car3{
+    width: 270px;
+	height: 120px;
+	z-index: 1;
+	position: absolute;
+	transform: translate(0px,500px);
+	animation: car3 5s infinite linear;
+}
+@keyframes car1 {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 1140px;
+    }
+}
+
+@keyframes car2 {
+    from {
+        right: 0px;
+    }
+    to {
+        right: 1100px;
+    }
+}
+@keyframes car3 {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 800px;
+    }
+}
